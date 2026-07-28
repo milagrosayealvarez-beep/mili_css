@@ -1,0 +1,83 @@
+*{
+  margin: 0;
+  padding: 0;
+
+}
+
+/* =========================
+   Colores principales
+========================= */
+h1 {
+  color: rgb(141, 48, 228);
+}
+
+nav {
+  color: rgb(12, 199, 199) 194;
+}
+
+h2 {
+  color: rgb(18, 42, 150);
+}
+
+footer {
+  color: rgb(27, 27, 214);
+  background-color: rgba(27, 27, 214, 0.1);
+  padding: 16px;
+}
+
+/* =========================
+   Tipografías (Google Fonts)
+========================= */
+/* Títulos */
+h1, h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+/* Contenido */
+nav, ul, li, a, figcaption, p, article, section {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/* =========================
+   Tamaño de tipografía
+========================= */
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+/* =========================
+   Fondos / backgrounds
+========================= */
+body {
+  background-color: #ffffff;
+  margin: 0;
+}
+
+nav {
+  background-color: #ffffff;
+}
+
+article, section {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 16px;
+}
+
+/* =========================
+   Links dentro del nav
+========================= */
+nav a {
+  color: rgb(39, 171, 171);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
