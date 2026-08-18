@@ -263,6 +263,25 @@ h2{
   }
 }
 
+/* Mejora responsive móvil: imágenes consistentes */
+@media (max-width: 767px) {
+  .main-sobre-mi, .main-hab {
+    padding: 16px; 
+  }
+
+  .main-sobre-mi img,
+  .main-hab img,
+  .imagen-2 img,
+  .imagen-3 img,
+  .imagen-4 img,
+  .carouselslide img,
+  .carouselslidecarousel-fade img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
 
 
 /* =========================
