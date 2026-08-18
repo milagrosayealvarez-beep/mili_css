@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyectos</title>
+
+    <!-- link de cdn de bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
     <link rel="stylesheet" href="../styles/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,43 +27,111 @@
 
 <body>
     <header>
-        <h1>Proyectos</h1>
 
-        <nav>
-            <ul>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+            <div class="container-fluid">
+
+                <img class="logo" src="../assets/logo.png" alt="logo">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="nav-links">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">volver al inicio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./habilidades.html">Habilidades</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sobre_mi.html">Sobre mi</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contactos.html">Contactos</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+        <!-- <nav>
+            <ul class="nav-links">
                 <li><a href="../index.html">volver al inicio</a></li>
                 <li><a href="./sobre_mi.html">Sobre mi</a></li>
                 <li><a href="./habilidades.html">Habilidades</a></li>
                 <li><a href="./contactos.html">Contactos</a></li>
             </ul>
 
-        </nav>
+         </nav> -->
 
-        <img src="../assets/logo.png" alt="logo">
+        <div class="titulo">
+
+            <h1>Proyectos</h1>
+
+        </div>
+
 
     </header>
 
-    <main>
-        <section>
-            <article>
-                <h2>Proyectos</h2>
-                <ul>
-                    <li>Creación de mi primer sitio web en HTML.</li>
-                    <li>Desarrollo de trabajos y presentaciones.</li>
-                    <li>Diseño de páginas web básicas.</li>
-                    <li>Aprendizaje de programación y herramientas digitales.</li>
-                    <li>Creación de contenido para redes sociales.</li>
-                    <li>Participación en proyectos grupales.</li>
-                    <li>Investigación sobre tecnología.</li>
-                    <li>Práctica de edición y organización de contenido digital.</li>
-                    <li>Desarrollo de futuros proyectos relacionados con la tecnología.</li>
+    <main class="main-proyectos">
+        <section class="lista-proyecto">
+            <article">
 
+                <h2>Proyectos</h2>
+
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                        <label class="form-check-label" for="firstCheckbox">Creación de mi primer sitio web en HTML.</label>
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                        <label class="form-check-label" for="secondCheckbox">Desarrollo de trabajos y presentaciones.</label>
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                        <label class="form-check-label" for="thirdCheckbox">Diseño de páginas web básicas.</label>
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                        <label class="form-check-label" for="thirdCheckbox">Aprendizaje de programación y herramientas digitales.</label>
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                        <label class="form-check-label" for="thirdCheckbox">Desarrollo de futuros proyectos relacionados con la tecnología.</label>
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                        <label class="form-check-label" for="thirdCheckbox">Práctica de edición y organización de contenido digital.</label>
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                        <label class="form-check-label" for="thirdCheckbox">Investigación sobre tecnología.</label>
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                        <label class="form-check-label" for="thirdCheckbox">Participación en proyectos grupales.</label>
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                        <label class="form-check-label" for="thirdCheckbox">Creación de contenido para redes sociales.</label>
+                    </li>
                 </ul>
-            </article>
+                </article>
 
         </section>
 
-        <figure>
+        <figure class="imagen-2">
             <img src="../assets/proyectos.jpg" alt="Imagen relacionada con mis proyectos de desarrollo web">
             <figcaption>Proyectos</figcaption>
         </figure>
@@ -68,8 +141,10 @@
         <p>&copy; Milagros Alvarez - Estudiante de Desarrollo Web</p>
     </footer>
 
-
-
+    <!-- link de cdn de bootstrap de js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 
 </body>
 

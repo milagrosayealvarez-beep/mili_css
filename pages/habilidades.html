@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Habilidades</title>
+
+    <!-- link de cdn de bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
     <link rel="stylesheet" href="../styles/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,41 +27,83 @@
 
 <body>
     <header>
-        <h1>Habilidades</h1>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
 
-        <nav>
-            <ul>
+            <div class="container-fluid">
+
+                <img class="logo" src="../assets/logo.png" alt="logo">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="nav-links">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">volver al inicio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./proyectos.html">Proyectos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sobre_mi.html">Sobre mi</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contactos.html">Contactos</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+        <!--  <nav>
+            <ul class="nav-links">
                 <li><a href="../index.html">volver al inicio</a></li>
                 <li><a href="./sobre_mi.html">Sobre mi</a></li>
                 <li><a href="./proyectos.html">Proyectos</a></li>
                 <li><a href="./contactos.html">Contactos</a></li>
             </ul>
 
-        </nav>
+        </nav> -->
+        <div class="titulo">
 
-        <img src="../assets/logo.png" alt="logo">
+            <h1>Habilidades</h1>
+
+        </div>
+
 
     </header>
 
-    <main>
-        <section>
+    <main class="main-hab">
+        <section class="lista-hab">
             <article>
                 <h2>lista de habilidades</h2>
-                <ul>
-                    <li>Conocimientos básicos en HTML</li>
-                    <li>Trabajo en equipo</li>
-                    <li>Aprendizaje rápido</li>
-                    <li>Responsabilidad</li>
-                    <li>Creatividad</li>
-                    <li>Resolución de problemas</li>
-                    <li>Organización y planificación</li>
+
+                <ul class="list-group list-group-flush">
+
+                    <li class="list-group-item">Conocimientos básicos en HTML</li>
+                    <li class="list-group-item">Trabajo en equip</li>
+                    <li class="list-group-item">Aprendizaje rápido</li>
+                    <li class="list-group-item">Responsabilidad</li>
+                    <li class="list-group-item">Creatividad</li>   
+                    <li class="list-group-item">Resolución de problemas</li>                   
+                    <li class="list-group-item">Organización y planificación</li>
+
                 </ul>
+
             </article>
 
 
         </section>
 
-        <figure>
+        <figure class="imagen-3">
             <img src="../assets/habilidades.jpg" alt="Imagen que representa mis habilidades y trabajo en equipo">
             <figcaption>Habilidades</figcaption>
         </figure>
@@ -66,7 +113,10 @@
         <p>&copy; Milagros Alvarez - Estudiante de Desarrollo Web</p>
     </footer>
 
-
+    <!-- link de cdn de bootstrap de js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

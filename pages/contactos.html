@@ -5,6 +5,11 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Contactos</title>
+
+   <!-- link de cdn de bootstrap -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
    <link rel="stylesheet" href="../styles/style.css">
 
    <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,10 +27,45 @@
 
 <body>
    <header>
-      <h1>Contactos</h1>
 
-      <nav>
-         <ul>
+       <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+            <div class="container-fluid">
+
+                <img class="logo" src="../assets/logo.png" alt="logo">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="nav-links">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">volver al inicio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./proyectos.html">Proyectos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link"  href="./sobre_mi.html">Sobre mi</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./habilidades.html">Habilidades</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+      <!-- <nav>
+         <ul class="nav-links">
             <li><a href="../index.html">volver al inicio</a></li>
             <li><a href="./sobre_mi.html">Sobre mi</a></li>
             <li><a href="./proyectos.html">Proyectos</a></li>
@@ -33,25 +73,42 @@
          </ul>
 
 
-      </nav>
+      </nav>-->
+      
+      <div class="titulo">
+   
+         <h1>Contactos</h1>
 
-      <img src="../assets/logo.png" alt="logo">
+      </div>
+
+
    </header>
-   <main>
-      <section>
+   <main class="main-contactos">
+      <section class="texto-contacto">
          <article>
             <h2>Redes Sociales</h2>
-            <ul>
-               <li><a href="https://www.instagram.com/milyalvarezz/">Instagram</a></li>
-               <li><a href="https://www.linkedin.com/in/milagros-ayelen-alvarez-42a161389/">LinkedIn</a></li>
-               <li><a href="mailto:milagrosayealvarez@gmail.com">mi email es milagrosayealvarez@gmail.com</a></li>
+            <ul class="contacto-lista">
+               <li>
+                  <img class="logo-instagram" src="../assets/Instagram-Icon.png" alt="logo de instagram">
+                  <a href="https://www.instagram.com/milyalvarezz/">Instagram</a>
+               </li>
+
+               <li>
+                  <img class="logo-linkedin" src="../assets/logo-linkedin.png" alt="logo de linkedin">
+                  <a href="https://www.linkedin.com/in/milagros-ayelen-alvarez-42a161389/">LinkedIn</a>
+               </li>
+
+               <li>
+                  <img class="logo-gmail" src="../assets/logo-gmail.png" alt="logo de gmail">
+                  <a href="mailto:milagrosayealvarez@gmail.com">milagrosayealvarez@gmail.com</a>
+               </li>
             </ul>
 
          </article>
 
       </section>
 
-      <figure>
+      <figure class="imagen-4">
          <img src="../assets/contactos.jpg" alt="Imagen relacionada con mis formas de contactarme">
          <figcaption>Contactos</figcaption>
       </figure>
@@ -60,6 +117,11 @@
    <footer>
       <p>&copy; Milagros Alvarez - Estudiante de Desarrollo Web</p>
    </footer>
+
+   <!-- link de cdn de bootstrap de js -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"></script>
 
 </body>
 
