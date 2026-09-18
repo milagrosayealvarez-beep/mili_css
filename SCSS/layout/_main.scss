@@ -1,0 +1,207 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+.main-index{
+   display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "presentacion"
+    "imagen";
+  gap: 24px;
+  padding: 20px;
+}
+
+@media (min-width: 1024px){
+  .main-index{
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-areas:
+      "imagen presentacion";
+  }
+}
+
+
+@media (min-width: 768px){
+  .main-index{
+    gap: 24px;
+  }
+}
+
+.main-sobre-mi{
+  display: grid;
+  grid-template-columns: 1fr; /* mobile 1 columna */
+  grid-template-areas:
+    "Bio"
+    "Foto";
+  gap: 24px;
+  align-items: start;
+  padding: 20px;
+}
+
+@media (min-width: 1042px){
+  .main-sobre-mi{
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-areas: "Foto Bio";
+  }
+}
+
+@media (min-width: 768px){
+  .main-sobre-mi{
+    gap: 32px;
+  }
+}
+
+.main-proyectos{
+ @include m.mains;
+}
+
+@media (min-width: 1024px){
+  .main-proyectos{
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-areas: "imagen texto"; /* texto izquierda, imagen derecha */
+  }
+}
+
+@media (min-width: 768px){
+  .main-proyectos{
+    gap: 32px;
+  }
+}
+
+.main-hab{
+ @include m.mains;
+}
+
+@media (min-width: 1024px){
+  .main-hab{
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "imagen texto";
+  }
+}
+
+.main-contactos{
+@include m.mains;
+}
+
+
+@media (min-width: 1024px){
+  .main-contactos{
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "texto imagen"; /* texto izquierda, imagen derecha */
+  }
+}
+
+/* Mejora responsive móvil: imágenes consistentes */
+@media (max-width: 767px) {
+  .main-sobre-mi, .main-hab {
+    padding: 16px; 
+  }
+
+  .main-sobre-mi img,
+  .main-hab img,
+  .imagen-2 img,
+  .imagen-3 img,
+  .imagen-4 img,
+  .carouselslide img,
+  .carouselslidecarousel-fade img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+section{
+ @include m.display;
+}
+
+article{
+   @include m.display;
+  }
+
+h2{
+  margin: 0 0 12px 0;
+}
+
+.contacto-lista{
+    @include m.display;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 8px;
+}
+
+.contacto-lista li{
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+
+.presentacion{
+  grid-area: presentacion;
+}
+
+
+.carouselslide{
+  grid-area: imagen;
+}
+.carouselslide{
+   width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Bio{
+  grid-area: Bio;
+}
+
+.carouselslidecarousel-fade{
+  grid-area: Foto;
+}
+
+.carouselslidecarousel-fade{
+    width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.lista-proyecto{ 
+  grid-area: texto; 
+}
+
+.imagen-2{
+   grid-area: imagen; 
+  }
+
+.imagen-2 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.lista-hab{
+   grid-area: texto; 
+  }
+
+.imagen-3{
+   grid-area: imagen; 
+  }
+
+.imagen-3 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.texto-contacto{
+  grid-area: texto;
+}
+
+.imagen-4{
+  grid-area: imagen;
+}
+
+.imagen-4 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}

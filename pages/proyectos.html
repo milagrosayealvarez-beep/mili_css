@@ -4,7 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyectos</title>
+
+    <meta name="description"
+        content="Explorá la galería de proyectos y desarrollos web de Milagros Alvarez: sitios adaptables, código limpio y experiencias interactivas.">
+    <meta name="keywords"
+        content="proyectos web, portfolio frontend, trabajos desarrollo web, sitios responsive, proyectos html css">
+
+    <title>Proyectos y Portfolio | Milagros Alvarez - Desarrolladora Web</title>
 
     <!-- link de cdn de bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -23,6 +29,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
         rel="stylesheet">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 
 <body>
@@ -32,7 +44,7 @@
 
             <div class="container-fluid">
 
-                <img class="logo" src="../assets/logo.png" alt="logo">
+                <img class="logo" src="../assets/logo.png" alt="Logo de Mi Portfolio Web">
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,7 +63,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="./sobre_mi.html">Sobre mi</a>
+                            <a class="nav-link" href="./sobre-mi.html">Sobre mi</a>
                         </li>
 
                         <li class="nav-item">
@@ -64,19 +76,10 @@
             </div>
         </nav>
 
-        <!-- <nav>
-            <ul class="nav-links">
-                <li><a href="../index.html">volver al inicio</a></li>
-                <li><a href="./sobre_mi.html">Sobre mi</a></li>
-                <li><a href="./habilidades.html">Habilidades</a></li>
-                <li><a href="./contactos.html">Contactos</a></li>
-            </ul>
 
-         </nav> -->
+        <div>
 
-        <div class="titulo">
-
-            <h1>Proyectos</h1>
+            <h1 class="animate__animated animate__rubberBand">Proyectos</h1>
 
         </div>
 
@@ -85,54 +88,70 @@
 
     <main class="main-proyectos">
         <section class="lista-proyecto">
-            <article">
+            
+            <h2>Mis trabajos</h2>
 
-                <h2>Proyectos</h2>
+                <article>
 
-                <ul class="list-group">
+                    <h3>Proyectos realizados</h3>
+                              
+                    <ul class="list-group">
                     <li class="list-group-item">
-                        <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
-                        <label class="form-check-label" for="firstCheckbox">Creación de mi primer sitio web en HTML.</label>
+                        <input class="form-check-input me-1" type="checkbox" value="" id="proyecto-check-1">
+                        <label class="form-check-label" for="proyecto-check-1">Creación de mi primer sitio web en
+                            HTML.</label>
                     </li>
                     <li class="list-group-item">
-                        <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
-                        <label class="form-check-label" for="secondCheckbox">Desarrollo de trabajos y presentaciones.</label>
+                        <input class="form-check-input me-1" type="checkbox" value="" id="proyecto-check-2">
+                        <label class="form-check-label" for="proyecto-check-2">Desarrollo de trabajos y
+                            presentaciones.</label>
                     </li>
                     <li class="list-group-item">
-                        <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
-                        <label class="form-check-label" for="thirdCheckbox">Diseño de páginas web básicas.</label>
+                        <input class="form-check-input me-1" type="checkbox" value="" id="proyecto-check-3">
+                        <label class="form-check-label" for="proyecto-check-3">Diseño de páginas web básicas.</label>
                     </li>
                     <li class="list-group-item">
-                        <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
-                        <label class="form-check-label" for="thirdCheckbox">Aprendizaje de programación y herramientas digitales.</label>
+                        <input class="form-check-input me-1" type="checkbox" value="" id="proyecto-check-4">
+                        <label class="form-check-label" for="proyecto-check-4">Aprendizaje de programación y
+                            herramientas
+                            digitales.</label>
                     </li>
                     <li class="list-group-item">
-                        <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
-                        <label class="form-check-label" for="thirdCheckbox">Desarrollo de futuros proyectos relacionados con la tecnología.</label>
+                        <input class="form-check-input me-1" type="checkbox" value="" id="proyecto-check-5">
+                        <label class="form-check-label" for="proyecto-check-5">Desarrollo de futuros proyectos
+                            relacionados con la
+                            tecnología.</label>
                     </li>
                     <li class="list-group-item">
-                        <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
-                        <label class="form-check-label" for="thirdCheckbox">Práctica de edición y organización de contenido digital.</label>
+                        <input class="form-check-input me-1" type="checkbox" value="" id="proyecto-check-6">
+                        <label class="form-check-label" for="proyecto-check-6">Práctica de edición y organización de
+                            contenido
+                            digital.</label>
                     </li>
                     <li class="list-group-item">
-                        <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
-                        <label class="form-check-label" for="thirdCheckbox">Investigación sobre tecnología.</label>
+                        <input class="form-check-input me-1" type="checkbox" value="" id="proyecto-check-7">
+                        <label class="form-check-label" for="proyecto-check-7">Investigación sobre tecnología.</label>
                     </li>
                     <li class="list-group-item">
-                        <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
-                        <label class="form-check-label" for="thirdCheckbox">Participación en proyectos grupales.</label>
+                        <input class="form-check-input me-1" type="checkbox" value="" id="proyecto-check-8">
+                        <label class="form-check-label" for="proyecto-check-8">Participación en proyectos
+                            grupales.</label>
                     </li>
                     <li class="list-group-item">
-                        <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
-                        <label class="form-check-label" for="thirdCheckbox">Creación de contenido para redes sociales.</label>
+                        <input class="form-check-input me-1" type="checkbox" value="" id="proyecto-check-9">
+                        <label class="form-check-label" for="proyecto-check-9">Creación de contenido para redes
+                            sociales.</label>
                     </li>
                 </ul>
-                </article>
-
+    
+    
+                
+            </article>
+    
         </section>
 
         <figure class="imagen-2">
-            <img src="../assets/proyectos.jpg" alt="Imagen relacionada con mis proyectos de desarrollo web">
+            <img src="../assets/proyectos.jpg" alt="La palabra proyecto en ingles con personas animadas al rededor">
             <figcaption>Proyectos</figcaption>
         </figure>
     </main>
@@ -145,6 +164,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+
 
 </body>
 

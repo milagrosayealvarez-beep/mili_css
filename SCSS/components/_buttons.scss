@@ -1,0 +1,59 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
+// 1. Variable local con operador para el padding
+$btn-padding-y: 10px;
+$btn-padding-x: $btn-padding-y * 2; // Operador de multiplicación -> 20px
+
+// 2. Placeholder base que agrupa el estilo común
+%btn-base {
+  background-color: v.$primari_color;
+  color: v.$color_principal;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, opacity 0.25s ease;
+}
+
+// 3. Navbar toggler extendiendo la base
+.navbar-toggler {
+  @extend %btn-base;
+  border-radius: 12px;
+
+  @include m.hover-opacity(0.9);
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+// 4. Botón general extendiendo la base y usando padding calculado
+.btn-custom {
+  @extend %btn-base;
+  border-radius: 8px;
+  padding: $btn-padding-y $btn-padding-x; // 10px 20px
+
+  @include m.hover-opacity(0.85);
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+// 5. Variante secundaria (opcional para sumar otra extensión)
+.btn-secondary {
+  @extend %btn-base;
+  background-color: transparent;
+  border: 1px solid v.$primari_color;
+  color: v.$primari_color;
+  border-radius: 8px;
+  padding: $btn-padding-y $btn-padding-x;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+}

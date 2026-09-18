@@ -1,0 +1,13 @@
+@use "../utilities/variables" as v;
+footer {
+  background-color: #0f172a; // azul oscuro
+  border-top: 1px solid rgba(255, 255, 255, .08);
+  padding: 1.25rem 0;
+
+  p {
+    margin: 0;
+    text-align: center;
+    color: v.$color_principal; 
+    font-size: 0.95rem;
+  }
+}

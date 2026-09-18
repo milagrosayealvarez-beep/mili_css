@@ -1,0 +1,21 @@
+@mixin mains(){
+display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "texto"
+    "imagen";
+  gap: 24px;
+  padding: 20px;
+  align-items: start
+}
+
+@mixin display(){
+     display: flex;
+    flex-direction: column
+}
+
+@mixin hover-opacity($opacity: 0.9) {
+  &:hover {
+    opacity: $opacity;
+  }
+}

@@ -1,0 +1,24 @@
+@use "../utilities/mixins" as m;
+.logo{
+  width: 80px;     /* 60-100 segun el diseño */
+  height: auto;
+  display: block;  /* evita espacios raros debajo de img */
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header{
+  padding: 20px;
+   @include m.display;;
+  align-items: flex-start;
+  gap: 16px;
+}
+.logo-instagram , .logo-linkedin , .logo-gmail {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+  flex: 0 0 auto;}
